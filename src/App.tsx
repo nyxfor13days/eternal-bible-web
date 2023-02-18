@@ -4,6 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import RootRouter from "./routes";
 import { Suspense } from "react";
 import Preloader from "./components/Preloader";
+import { MobileWrapper } from "./components/Custom";
 
 const App = () => {
   return (
@@ -12,7 +13,9 @@ const App = () => {
 
       <BrowserRouter>
         <Suspense fallback={<Preloader />}>
-          <RootRouter />
+          <MobileWrapper>
+            <RootRouter />
+          </MobileWrapper>
         </Suspense>
       </BrowserRouter>
     </ThemeProvider>
