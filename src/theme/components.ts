@@ -6,7 +6,6 @@ const components: Components<Omit<Theme, "components">> = {
       root: {
         padding: "0.375rem 20px",
         minWidth: "72px",
-        borderRadius: "1rem",
       },
     },
 

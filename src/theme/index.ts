@@ -5,6 +5,7 @@ import components from "./components";
 
 const theme: ThemeOptions = createTheme({
   palette: palette,
+  shape: { borderRadius: 16 },
   typography: typography,
   components: components,
 });
