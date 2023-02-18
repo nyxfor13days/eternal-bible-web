@@ -3,6 +3,7 @@ import theme from "./theme";
 import { BrowserRouter } from "react-router-dom";
 import RootRouter from "./routes";
 import { Suspense } from "react";
+import Preloader from "./components/Preloader";
 
 const App = () => {
   return (
@@ -10,7 +11,7 @@ const App = () => {
       <CssBaseline />
 
       <BrowserRouter>
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<Preloader />}>
           <RootRouter />
         </Suspense>
       </BrowserRouter>
