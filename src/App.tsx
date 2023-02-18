@@ -1,12 +1,13 @@
-import { CssBaseline, ThemeProvider, useTheme } from "@mui/material";
+import { Button, CssBaseline, ThemeProvider, Typography } from "@mui/material";
+import theme from "./theme";
 
 const App = () => {
-  const theme = useTheme();
-
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <div>App</div>
+      <Typography variant="h1">Eternal Bible Web App</Typography>
+      <Button variant="contained">Hello</Button>
+      <Button variant="outlined">World</Button>
     </ThemeProvider>
   );
 };
